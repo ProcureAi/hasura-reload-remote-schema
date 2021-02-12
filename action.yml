@@ -1,0 +1,22 @@
+name: 'Hasura Reload Remote Schema'
+description: 'JavaScript Github Action to refresh a hasura remote schema'
+author: 'Martin Rädlinger'
+branding:
+  icon: 'refresh-cw'
+  color: 'green'
+inputs:
+  HASURA_ENDPOINT:
+    required: true
+    default: ''
+    description: URL for the Hasura endpoint to call
+  HASURA_ADMIN_SECRET:
+    required: true
+    default: ''
+    description: admin secret for the Hasura instance.
+  HASURA_REMOTE_SCHEMA_NAME:
+    required: true
+    default: ''
+    description: Name of the remote schema
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

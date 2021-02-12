@@ -1,0 +1,36 @@
+{
+  "name": "hasura-reload-remote-schema",
+  "version": "1.0.0",
+  "description": "JavaScript Github Action to refresh a hasura remote schema",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build src/index.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProcureAi/hasura-reload-remote-schema.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript",
+    "Webhook",
+    "Hasura"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProcureAi/hasura-reload-remote-schema/issues"
+  },
+  "homepage": "https://github.com/ProcureAi/hasura-reload-remote-schema#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "prettier": "^2.2.1"
+  }
+}
